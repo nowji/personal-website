@@ -1,11 +1,11 @@
 import React from "react";
 
-const Home: React.FC = () => {
+const HomePage: React.FC = () => {
   return (
-    <div className="w-full md:w-3/4 flex flex-col items-left justify-start p-4">
+    <div className="w-full md:w-3/4 flex flex-col items-left justify-start p-4 md:p-8">
       <h1 className="text-5xl font-bold">Home</h1>
       <hr className="mt-2 mb-6 w-4/5"></hr>
-      <h2 className="text-2xl font-bold mb-4">About</h2>
+      <h2 className="text-2xl font-semibold mb-4">About</h2>
       <p>
         I am a senior at the University of Florida studying computer science. My
         main interests are in front-end engineering and machine learning. In my
@@ -28,4 +28,4 @@ const Home: React.FC = () => {
   );
 };
 
-export default Home;
+export default HomePage;
