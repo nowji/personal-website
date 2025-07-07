@@ -21,7 +21,6 @@ const Navbar: React.FC = () => {
   return (
     <nav
       className="
-        fixed top-0 left-0 right-0 z-50
         w-full h-1/8 p-4
         flex items-center justify-between
         bg-true-white shadow-md
@@ -64,7 +63,10 @@ const Navbar: React.FC = () => {
             <Link
               key={link.name}
               to={link.path}
-              className="block text-dark-gray-primary pl-1 pr-2 hover:bg-[#ede4e4] transition-colors duration-200"
+              className="
+                block text-dark-gray-primary pl-1 pr-2 
+                hover:bg-[#ede4e4] transition-colors duration-200 rounded-sm
+              "
             >
               {link.name}
             </Link>
@@ -83,7 +85,10 @@ const Navbar: React.FC = () => {
                 key={link.name}
                 href={link.path}
                 target="_blank"
-                className="block text-off-white-bg pl-1 pr-2 bg-dark-gray-primary hover:bg-[#171616] transition-colors duration-200"
+                className="
+                  block text-off-white-bg pl-1 pr-2 bg-dark-gray-primary 
+                  hover:bg-[#171616] transition-colors duration-200 rounded-sm
+                "
               >
                 {link.name}
               </a>
