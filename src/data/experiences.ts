@@ -22,6 +22,15 @@ const experiences: Experience[] = [
     type: "research",
   },
   {
+    company: "Swamphacks",
+    position: "Operations Committee Member",
+    startDate: "May 2025",
+    description: [
+      "Collaborating with student orgs to set up workshops and socials",
+    ],
+    type: "involvement",
+  },
+  {
     company: "ACM UF",
     position: "Web Developer",
     startDate: "March 2025",
