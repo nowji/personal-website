@@ -9,7 +9,7 @@ const CoursePage: React.FC = () => {
         <h1 className="text-5xl font-bold mb-4">Coursework</h1>
         <hr className="mt-2 mb-6 w-4/5"></hr>
 
-        {/* <div className="w-full justify-evenly flex flex-wrap flex-row gap-6">
+        <div className="w-full justify-evenly flex flex-wrap flex-row gap-6">
           <div className="flex flex-col p-2">
             <h2 className="text-2xl font-bold">Major</h2>
             <ul>
@@ -46,7 +46,7 @@ const CoursePage: React.FC = () => {
               </li>
             </ul>
           </div>
-        </div> */}
+        </div>
 
         <CourseContainer
           courseType="Computer Science"
