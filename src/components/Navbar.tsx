@@ -26,12 +26,13 @@ const Navbar: React.FC = () => {
         shadow-md
 
         md:static
-        md:w-1/6 md:max-w-48 md:h-screen
+        md:w-48
         md:flex-col md:items-start md:justify-start
         md:pl-8
         md:border-r md:border-gray-200
         md:shadow-none
         md:bg-off-white-bg
+        md:flex-shrink-0
       "
     >
       <div className="md:mb-8 w-full">

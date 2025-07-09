@@ -5,11 +5,11 @@ import { csCourses, philCourses, aiCourses } from "../data/courses";
 const CoursePage: React.FC = () => {
   return (
     <>
-      <div className="w-full md:w-3/4 p-4 md:p-8 flex flex-col items-left justify-start">
+      <div className="w-full flex flex-col items-left justify-start p-4 md:p-8 h-full">
         <h1 className="text-5xl font-bold mb-4">Coursework</h1>
         <hr className="mt-2 mb-6 w-4/5"></hr>
 
-        <div className="w-full justify-evenly flex flex-row gap-6">
+        {/* <div className="w-full justify-evenly flex flex-wrap flex-row gap-6">
           <div className="flex flex-col p-2">
             <h2 className="text-2xl font-bold">Major</h2>
             <ul>
@@ -30,7 +30,7 @@ const CoursePage: React.FC = () => {
                 <a
                   href="https://learn.nvidia.com/certificates?id=94e6lWcSTEOp5cOZrm4KSA#"
                   target="_blank"
-                  className="text-[#1717cf]"
+                  className="text-[#1717cf] block truncate"
                 >
                   Nvidia Natural Language Processing
                 </a>
@@ -39,14 +39,14 @@ const CoursePage: React.FC = () => {
                 <a
                   href="https://learn.nvidia.com/certificates?id=imC_2efcSVC50RSRH4CPQQ"
                   target="_blank"
-                  className="text-[#1717cf]"
+                  className="text-[#1717cf] block truncate"
                 >
                   Nvidia Fundamentals of Deep Learning
                 </a>
               </li>
             </ul>
           </div>
-        </div>
+        </div> */}
 
         <CourseContainer
           courseType="Computer Science"
