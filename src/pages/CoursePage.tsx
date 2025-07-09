@@ -1,5 +1,4 @@
 import React from "react";
-import CourseCard from "../components/CourseCard";
 import CourseContainer from "../components/CourseContainer";
 import { csCourses, philCourses, aiCourses } from "../data/courses";
 
