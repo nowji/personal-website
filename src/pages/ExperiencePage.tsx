@@ -28,7 +28,7 @@ const ExperiencePage: React.FC = () => {
       : experiences.filter((exp) => selectedTypes.includes(exp.type));
 
   return (
-    <div className="container mx-auto p-4 md:p-8">
+    <div className="w-full md:w-3/4 p-4 md:p-8 flex flex-col items-left justify-start">
       <h1 className="text-5xl font-bold mb-4">Experience</h1>
       <hr className="mt-2 mb-6 w-4/5"></hr>
 

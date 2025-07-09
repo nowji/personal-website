@@ -5,7 +5,7 @@ const Navbar: React.FC = () => {
   const internalLinks = [
     { name: "Experience", path: "/experience" },
     { name: "Coursework", path: "/coursework" },
-    { name: "Resume", path: "/resume" },
+    { name: "Research", path: "/research" },
   ];
   const externalLinks = [
     {
@@ -23,7 +23,7 @@ const Navbar: React.FC = () => {
       className="
         w-full h-1/8 p-4
         flex items-center justify-between
-        bg-true-white shadow-md
+        shadow-md
 
         md:static
         md:w-1/6 md:max-w-48 md:h-screen
@@ -42,7 +42,9 @@ const Navbar: React.FC = () => {
             
           "
         >
-          <div className="text-4xl font-bold md:text-right">نیما</div>
+          <div className="md:text-4xl text-3xl font-bold md:text-right">
+            نیما
+          </div>
           <div className="text-lg italic md:text-right">Neema Owji</div>
         </Link>
       </div>

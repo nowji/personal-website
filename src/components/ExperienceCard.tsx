@@ -8,7 +8,7 @@ interface ExperienceCardProps {
 
 const ExperienceCard: React.FC<ExperienceCardProps> = ({ experience }) => {
   return (
-    <div className="bg-true-white p-6 rounded-lg shadow-md flex flex-col md:flex-row items-start space-y-4 md:space-y-0 md:space-x-6">
+    <div className="bg-true-white border border-dark-gray-primary px-6 pb-4 pt-2 rounded-lg shadow-md flex flex-col md:flex-row items-start space-y-4">
       {experience.imagePath && (
         <div className="flex-shrink-0">
           <img
