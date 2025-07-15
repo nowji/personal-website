@@ -1,7 +1,43 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import type { NavbarLink } from "../types/NavbarLink";
+import ExternalLinkButton from "./ExternalLinkButton";
+import InternalLinkButton from "./InternalLinkButton";
 
 const Navbar: React.FC = () => {
+  const links: NavbarLink[] = [
+    {
+      name: "Experience",
+      path: "/experience",
+      external: false,
+      color: "light",
+    },
+    {
+      name: "Coursework",
+      path: "/coursework",
+      external: false,
+      color: "light",
+    },
+    { name: "Research", path: "/research", external: false, color: "light" },
+    {
+      name: "GitHub",
+      path: "https://github.com/nowji",
+      external: true,
+      color: "dark",
+    },
+    {
+      name: "LinkedIn",
+      path: "https://linkedin.com/in/neema-owji",
+      external: true,
+      color: "dark",
+    },
+    {
+      name: "Resume",
+      path: "/resume",
+      external: false,
+      color: "dark",
+    },
+  ];
   const internalLinks = [
     { name: "Experience", path: "/experience" },
     { name: "Coursework", path: "/coursework" },
@@ -52,53 +88,53 @@ const Navbar: React.FC = () => {
 
       <div
         className="
-          flex flex-col space-y-4
+          flex flex-col space-y-4 pl-2
           md:text-lg md:flex-col md:space-y-4 md:space-x-0 md:w-full
         "
       >
         <div
           className="
-            w-full flex flex-row space-x-2 justify-start
+            w-full flex flex-row space-x-2
             md:flex-col md:space-y-2 md:space-x-0
           "
         >
-          {internalLinks.map((link) => (
-            <Link
-              key={link.name}
-              to={link.path}
-              className="
-                block text-dark-gray-primary pl-1 pr-2 
-                hover:bg-[#ede4e4] transition-colors duration-200 rounded-sm
-              "
-            >
-              {link.name}
-            </Link>
-          ))}
+          {links
+            .slice(0, 3)
+            .map((link) =>
+              link.external ? (
+                <ExternalLinkButton link={link} />
+              ) : (
+                <InternalLinkButton link={link} />
+              )
+            )}
         </div>
 
         {externalLinks.length > 0 && (
           <div
             className="
-              w-full flex flex-row space-x-2 justify-end
+              w-full flex flex-row space-x-2
               md:flex-col md:space-y-2 md:space-x-0
             "
           >
-            {externalLinks.map((link) => (
-              <a
-                key={link.name}
-                href={link.path}
-                target="_blank"
-                className="
-                  block text-off-white-bg pl-1 pr-2 bg-dark-gray-primary 
-                  hover:bg-[#171616] transition-colors duration-200 rounded-sm
-                "
-              >
-                {link.name}
-              </a>
-            ))}
+            {links
+              .slice(3, 6)
+              .map((link) =>
+                link.external ? (
+                  <ExternalLinkButton link={link} />
+                ) : (
+                  <InternalLinkButton link={link} />
+                )
+              )}
           </div>
         )}
       </div>
+      {/* {links.map((link) =>
+            link.external ? (
+              <ExternalLinkButton link={link} />
+            ) : (
+              <InternalLinkButton link={link} />
+            )
+          )} */}
     </nav>
   );
 };
