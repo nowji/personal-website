@@ -1,6 +1,6 @@
 {
   "name": "personal-website",
-  "compatibility_date": "2025-07-07", // This is important and often needs to be the current or a recent date
+  "compatibility_date": "2025-07-07",
   "assets": {
     "directory": "./dist"
   }

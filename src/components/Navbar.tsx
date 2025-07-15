@@ -38,21 +38,6 @@ const Navbar: React.FC = () => {
       color: "dark",
     },
   ];
-  const internalLinks = [
-    { name: "Experience", path: "/experience" },
-    { name: "Coursework", path: "/coursework" },
-    { name: "Research", path: "/research" },
-  ];
-  const externalLinks = [
-    {
-      name: "GitHub",
-      path: "https://github.com/nowji",
-    },
-    {
-      name: "LinkedIn",
-      path: "https://linkedin.com/in/neema-owji",
-    },
-  ];
 
   return (
     <nav
@@ -109,24 +94,22 @@ const Navbar: React.FC = () => {
             )}
         </div>
 
-        {externalLinks.length > 0 && (
-          <div
-            className="
+        <div
+          className="
               w-full flex flex-row space-x-2
               md:flex-col md:space-y-2 md:space-x-0
             "
-          >
-            {links
-              .slice(3, 6)
-              .map((link) =>
-                link.external ? (
-                  <ExternalLinkButton link={link} />
-                ) : (
-                  <InternalLinkButton link={link} />
-                )
-              )}
-          </div>
-        )}
+        >
+          {links
+            .slice(3, 6)
+            .map((link) =>
+              link.external ? (
+                <ExternalLinkButton link={link} />
+              ) : (
+                <InternalLinkButton link={link} />
+              )
+            )}
+        </div>
       </div>
       {/* {links.map((link) =>
             link.external ? (
