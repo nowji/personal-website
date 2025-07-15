@@ -12,8 +12,8 @@ const ExternalLinkButton: React.FC<ExternalLinkButtonProps> = ({ link }) => {
       target="_blank"
       className={
         link.color === "light"
-          ? "block text-dark-gray-primary pl-1 pr-2 hover:bg-[#ede4e4] transition-colors duration-200 rounded-sm"
-          : "block text-off-white-bg pl-1 pr-2 bg-dark-gray-primary hover:bg-[#171616] transition-colors duration-200 rounded-sm"
+          ? "block text-dark-gray-primary pl-1 pr-4 hover:bg-[#ede4e4] transition-colors duration-200 rounded-sm"
+          : "block text-off-white-bg pl-1 pr-4 bg-dark-gray-primary hover:bg-[#171616] transition-colors duration-200 rounded-sm"
       }
     >
       {link.name}

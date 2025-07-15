@@ -44,7 +44,7 @@ const Navbar: React.FC = () => {
       className="
         w-full h-1/8 p-4
         flex items-center justify-between
-        shadow-md
+        shadow-md mr-3
 
         md:static
         md:w-48
@@ -80,7 +80,7 @@ const Navbar: React.FC = () => {
         <div
           className="
             w-full flex flex-row space-x-2
-            md:flex-col md:space-y-2 md:space-x-0
+            md:flex-col md:space-y-2 md:space-x-0 justify-between
           "
         >
           {links
@@ -97,7 +97,7 @@ const Navbar: React.FC = () => {
         <div
           className="
               w-full flex flex-row space-x-2
-              md:flex-col md:space-y-2 md:space-x-0
+              md:flex-col md:space-y-2 md:space-x-0 justify-between
             "
         >
           {links
