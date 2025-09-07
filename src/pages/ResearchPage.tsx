@@ -6,7 +6,7 @@ const ResearchPage: React.FC = () => {
     <div className="w-full flex flex-col items-left justify-start p-4 md:p-8">
       <h1 className="text-5xl font-bold mb-4">Research</h1>
       <hr className="mt-2 mb-6 w-4/5"></hr>
-      <h2 className="text-4xl font-bold mb-2">Emphatic Perspectives</h2>
+      <h2 className="text-4xl font-bold mb-2">Empathetic Perspectives</h2>
       <h3 className="text-xl font-semibold mb-2">
         PI:{" "}
         <a
