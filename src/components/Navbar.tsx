@@ -33,7 +33,7 @@ const Navbar: React.FC = () => {
     },
     {
       name: "Resume",
-      path: "/resume",
+      path: "/resume.pdf",
       external: false,
       color: "dark",
     },
