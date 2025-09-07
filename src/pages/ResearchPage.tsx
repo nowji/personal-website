@@ -1,4 +1,5 @@
 import React from "react";
+import EmpatheticDialogue from "../assets/empatheticdialogue.png";
 
 const ResearchPage: React.FC = () => {
   return (
@@ -21,6 +22,16 @@ const ResearchPage: React.FC = () => {
       </h3>
       <h3 className="text-xl font-semibold mb-2">Philosophy Department</h3>
       <h3 className="text-l italic mb-6">August 2025 - May 2026</h3>
+      <div className="mb-6">
+        <img src={EmpatheticDialogue} width="30%" />
+        <h4 className="text-sm">
+          An example of LLM's understanding empathy from{" "}
+          <span className="italic">
+            Towards Empathetic Open-domain Conversation Models: a New Benchmark
+            and Dataset
+          </span>
+        </h4>
+      </div>
       <p>
         &emsp;This research project aims to imbue a Large Language Model (LLM)
         with a diverse range of perspectives on common situations to make the
