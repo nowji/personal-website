@@ -34,7 +34,7 @@ const Navbar: React.FC = () => {
     {
       name: "Resume",
       path: "/resume.pdf",
-      external: false,
+      external: true,
       color: "dark",
     },
   ];
