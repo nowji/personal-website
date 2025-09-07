@@ -1,5 +1,5 @@
 import React from "react";
-import headshot from "../../public/neema headshot.jpg";
+import headshot from "../../public/headshot.jpg";
 
 const HomePage: React.FC = () => {
   return (
