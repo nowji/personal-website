@@ -2,6 +2,11 @@ import type { Course } from "../types/Course";
 
 export const csCourses: Course[] = [
   {
+    code: "CEN 4721",
+    name: "Human Computer Interaction",
+    semester: "Fall 2025",
+  },
+  {
     code: "CIS 4301",
     name: "Database Systems",
     semester: "Spring 2025",
@@ -80,6 +85,11 @@ export const philCourses: Course[] = [
 ];
 
 export const aiCourses: Course[] = [
+  {
+    code: "CAP 4641",
+    name: "Natural Language Processing",
+    semester: "Fall 2025",
+  },
   {
     code: "CIS 4930",
     name: "Intro to Machine Learning",
