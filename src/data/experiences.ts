@@ -6,9 +6,20 @@ const experiences: Experience[] = [
     position: "Software Engineer Intern",
     startDate: "May 2025",
     description: [
-      "Integrating automated accessibillity testing into already existing playwright smoke tests",
-      "Adding a scheduled and triggered job into the Gitlab pipeline",
-      "Creating a web app with React to act as a dashboard for pipeline artifacts and local results",
+      "Built automated accessibillity testing into pre-existing Playwright smoke tests",
+      "Integrated scheduled and triggered jobs into the CICD pipeline to make accessibility violations more visible to developers",
+      "Designed and created a dashboard using React and AWS that lets users track pipeline artifacts and upload their local test results for better visualization",
+    ],
+    type: "work",
+  },
+  {
+    company: "The Agency at UF",
+    position: "Software Developer",
+    startDate: "August 2025",
+    description: [
+      "Worked on a project at Ipsos to create an internal document search tool using Vertex search on GCP with SharePoint",
+      "Developed an inventory management system to track equipment used by the production team",
+      "Collaborated with multiple other developers to make a custom website to attract new business prospects using Vercel, React, and AWS",
     ],
     type: "work",
   },
@@ -25,6 +36,7 @@ const experiences: Experience[] = [
     company: "Swamphacks",
     position: "Operations Committee Member",
     startDate: "May 2025",
+    endDate: "March 2026",
     description: [
       "Collaborating with student orgs to set up workshops and socials",
     ],
