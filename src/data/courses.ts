@@ -2,6 +2,11 @@ import type { Course } from "../types/Course";
 
 export const csCourses: Course[] = [
   {
+    code: "CNT 4007",
+    name: "Computer Network Fundamentals",
+    semester: "Spring 2026",
+  },
+  {
     code: "CEN 4721",
     name: "Human Computer Interaction",
     semester: "Fall 2025",

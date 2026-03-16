@@ -1,6 +1,21 @@
 import React from "react";
 import CourseContainer from "../components/CourseContainer";
 import { csCourses, philCourses, aiCourses } from "../data/courses";
+import type { Course } from "../types/Course";
+
+const emptyCourse: Course = {
+  code: "",
+  name: "",
+  semester: "",
+};
+
+const padCourses = function (courses: Course[]) {
+  // potential bug: if screen width changes from small to medium, padding doesn't refresh
+  while (courses.length % 3 !== 0 && screen.width > 768) {
+    courses.push(emptyCourse);
+  }
+  return courses;
+};
 
 const CoursePage: React.FC = () => {
   return (
@@ -50,15 +65,15 @@ const CoursePage: React.FC = () => {
 
         <CourseContainer
           courseType="Computer Science"
-          courses={csCourses}
+          courses={padCourses(csCourses)}
         ></CourseContainer>
         <CourseContainer
           courseType="AI/ML"
-          courses={aiCourses}
+          courses={padCourses(aiCourses)}
         ></CourseContainer>
         <CourseContainer
           courseType="Philosophy"
-          courses={philCourses}
+          courses={padCourses(philCourses)}
         ></CourseContainer>
       </div>
     </>
