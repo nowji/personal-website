@@ -87,10 +87,10 @@ const Navbar: React.FC = () => {
             .slice(0, 3)
             .map((link) =>
               link.external ? (
-                <ExternalLinkButton link={link} />
+                <ExternalLinkButton link={link} key={link.name} />
               ) : (
-                <InternalLinkButton link={link} />
-              )
+                <InternalLinkButton link={link} key={link.name} />
+              ),
             )}
         </div>
 
@@ -107,7 +107,7 @@ const Navbar: React.FC = () => {
                 <ExternalLinkButton link={link} />
               ) : (
                 <InternalLinkButton link={link} />
-              )
+              ),
             )}
         </div>
       </div>

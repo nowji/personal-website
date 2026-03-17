@@ -10,11 +10,14 @@ const emptyCourse: Course = {
 };
 
 const padCourses = function (courses: Course[]) {
+  const padded = [...courses];
   // potential bug: if screen width changes from small to medium, padding doesn't refresh
-  while (courses.length % 3 !== 0 && screen.width > 768) {
-    courses.push(emptyCourse);
+  if (typeof window !== "undefined") {
+    while (padded.length % 3 !== 0 && window.screen.width > 768) {
+      padded.push(emptyCourse);
+    }
   }
-  return courses;
+  return padded;
 };
 
 const CoursePage: React.FC = () => {
