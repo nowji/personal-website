@@ -33,9 +33,9 @@ const ExperiencePage: React.FC = () => {
       <hr className="mt-2 mb-6 w-4/5"></hr>
 
       <div className="mb-8 flex flex-wrap gap-4 items-center">
-        {allExperienceTypes.map((type) => (
+        {allExperienceTypes.map((type, index) => (
           <label
-            key={type}
+            key={`${type}-${index}`}
             className="flex items-center space-x-2 cursor-pointer"
           >
             <input
@@ -53,7 +53,10 @@ const ExperiencePage: React.FC = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {filteredExperiences.length > 0 ? (
           filteredExperiences.map((exp, index) => (
-            <ExperienceCard key={index} experience={exp} />
+            <ExperienceCard
+              key={`${exp.company}-${exp.position}-${index}`}
+              experience={exp}
+            />
           ))
         ) : (
           <p className="text-center text-lg text-gray-600 md:col-span-2">

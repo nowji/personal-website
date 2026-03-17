@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link } from "react-router";
 import type { NavbarLink } from "../types/NavbarLink";
 
 interface InternalLinkButtonProps {

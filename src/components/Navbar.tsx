@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link } from "react-router";
 import type { NavbarLink } from "../types/NavbarLink";
 import ExternalLinkButton from "./ExternalLinkButton";
 import InternalLinkButton from "./InternalLinkButton";
@@ -104,20 +104,13 @@ const Navbar: React.FC = () => {
             .slice(3, 6)
             .map((link) =>
               link.external ? (
-                <ExternalLinkButton link={link} />
+                <ExternalLinkButton link={link} key={link.name} />
               ) : (
-                <InternalLinkButton link={link} />
+                <InternalLinkButton link={link} key={link.name} />
               ),
             )}
         </div>
       </div>
-      {/* {links.map((link) =>
-            link.external ? (
-              <ExternalLinkButton link={link} />
-            ) : (
-              <InternalLinkButton link={link} />
-            )
-          )} */}
     </nav>
   );
 };

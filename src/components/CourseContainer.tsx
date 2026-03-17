@@ -15,8 +15,8 @@ const CourseContainer: React.FC<CourseContainerProps> = ({
     <>
       <h3 className="text-2xl font-semibold">{courseType + " Courses"}</h3>
       <div className="border border-dark-gray-primary m-4 rounded-sm shadow-md grid grid-cols-1 md:grid-cols-3 justify-start content-center">
-        {courses.map((course) => (
-          <CourseCard key={course.code} course={course}></CourseCard>
+        {courses.map((course, index) => (
+          <CourseCard key={`${course.code}-${index}`} course={course}></CourseCard>
         ))}
       </div>
     </>
