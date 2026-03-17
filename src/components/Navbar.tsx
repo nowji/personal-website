@@ -8,17 +8,17 @@ const Navbar: React.FC = () => {
   const links: NavbarLink[] = [
     {
       name: "Experience",
-      path: "/experience",
+      path: "/experience/",
       external: false,
       color: "light",
     },
     {
       name: "Coursework",
-      path: "/coursework",
+      path: "/coursework/",
       external: false,
       color: "light",
     },
-    { name: "Research", path: "/research", external: false, color: "light" },
+    { name: "Research", path: "/research/", external: false, color: "light" },
     {
       name: "GitHub",
       path: "https://github.com/nowji",

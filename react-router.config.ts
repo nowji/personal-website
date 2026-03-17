@@ -6,4 +6,7 @@ export default {
   async prerender() {
     return ["/", "/experience", "/coursework", "/research"];
   },
+  future: {
+    unstable_trailingSlashAwareDataRequests: true,
+  },
 } satisfies Config;
